@@ -1,0 +1,12 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "The backend portion of the full stack exercise",
+  "main": "server.js",
+  "repository": "https://github.com/RideAmigosCorp/full-stack-exercise.git",
+  "author": "RideAmigos",
+  "dependencies": {
+    "express": "^4.15.4",
+    "mongoose": "^4.11.10"
+  }
+}
