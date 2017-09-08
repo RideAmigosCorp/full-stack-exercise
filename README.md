@@ -2,7 +2,7 @@
 # Full Stack Exercise
 In this exercise, we’ll ask you to re-implement a basic piece of functionality in the RideAmigos platform. We’d expect this to take between 1 to 3 hours. Once you’ve finished, you can submit the exercise via GitHub link or by emailing a zip file with the code in it.
 ## Background
-One way we encourage alternative commuting at RideAmigos is with challenges, a competition between users. Clients will specify the parameters for a challenge, for example “number of miles  biked between Sept. 1st and October 15th”, and users will compete by submitting triplogs. The user with the most biked is the winner.
+One way we encourage alternative commuting at RideAmigos is with challenges, a competition between users. Clients will specify the parameters for a challenge, for example “number of miles  biked between Sept. 1st and October 15th”, and users will compete by submitting triplogs. The user with the most miles biked is the winner.
 
 You can see an example of our challenge implementation here, but don’t let it bias you towards one specific implementation or design. You won’t be judged based on how closely you mirror our design.
 ## Back-end Requirements
