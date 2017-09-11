@@ -23,6 +23,14 @@ There is an AngularJS 1.5x project setup in the repo.  In the project, we have p
 
 If you’re not comfortable with Angular 1, feel free to use Angular 2/4, React, Vue or your own vanilla JS approach.  Just be sure it runs with no errors and is transpiled to run in all major browsers.
 
+## Using this Repo
+We're a MEAN stack shop, so you'll need Node, Express & MongoDb installed before you can use this repo.
+* Node should be >= v 6.0.0
+* MongoDB should be >= v3.2 (earlier may work but you may have to change the mongoose version)
+* Express & other deps are specified in `package.json` and `yarn.lock`. You can install from those in the normal way.
+
+To get the backend running with some sample data, you can use the builtin `mongoimport` shell command, along with the two files included in the backend folder. 
+
 ## Evaluation
 While the perfect implementation could take quite a bit of time, we’d prefer you to spend only about an hour or two on the task. In particular, you’ll be judged not on the completeness of the code or your ability to predict every possible edge case, but instead on the structure, accuracy, and extensibility of your solution (the “broad strokes”). Thus, while you solution should e.g. run a server and render a front-end, we are not evaluating your ability to ship production ready code.  Do not worry about authentication, testing, security, etc.
 
