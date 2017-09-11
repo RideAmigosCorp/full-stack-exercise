@@ -10,7 +10,7 @@
     "mongoose": "^4.11.10"
   },
   "scripts" : {
-    "prestart" : "mongoimport triplogs.json",
+    "prestart" : "mongoimport triplogs.json && mongoimport challenges.json",
     "start" : "node server.js"
   }
 }

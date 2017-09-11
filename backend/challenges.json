@@ -1,0 +1,3 @@
+{"_id":{"$oid":"59b6d5a0e5e3664d1400044e"},"name":"September Bike Month!","description":"Who can bike the most in September?","startDate":{"$date":"2017-09-01T00:00:00.000Z"},"endDate":{"$date":"2017-10-01T00:00:00.000Z"},"mode":"bike"}
+{"_id":{"$oid":"59b6d5f1e5e3664d1400044f"},"name":"September Week of Walkin'!","description":"Start pumpin' your bunions! Who can chalk up the most walking miles in the middle of September?","startDate":{"$date":"2017-09-05T00:00:00.000Z"},"endDate":{"$date":"2017-09-12T00:00:00.000Z"},"mode":"walk"}
+{"_id":{"$oid":"59b6d627e5e3664d14000450"},"name":"CarpoolFest 2016!","description":"Our Annual End-of-Year Carpool Challenge","startDate":{"$date":"2016-11-01T00:00:00.000Z"},"endDate":{"$date":"2016-12-31T00:00:00.000Z"},"mode":"carpool"}
