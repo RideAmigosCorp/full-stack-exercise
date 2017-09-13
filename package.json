@@ -10,5 +10,9 @@
     "angular": "^1.6.6",
     "express": "^4.15.4",
     "mongoose": "^4.11.10"
+  },
+  "scripts" : {
+    "prestart" : "mongoimport triplogs.json && mongoimport challenges.json",
+    "start" : "node server.js"
   }
 }
