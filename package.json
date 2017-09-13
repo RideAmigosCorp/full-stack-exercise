@@ -6,6 +6,8 @@
   "repository": "https://github.com/RideAmigosCorp/full-stack-exercise.git",
   "author": "RideAmigos",
   "dependencies": {
+    "@uirouter/angularjs": "^1.0.6",
+    "angular": "^1.6.6",
     "express": "^4.15.4",
     "mongoose": "^4.11.10"
   }

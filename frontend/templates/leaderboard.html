@@ -1,0 +1,36 @@
+<div>
+  <div class="has-text-centered">
+    <h1 class="title">
+      #name Leaderboard
+    </h1>
+    <p class="subtitle">
+      We want to see all participants of the <strong>#name</strong> challenge. The challenge name should be in the
+      title.
+    </p>
+  </div>
+  <section class="section content">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-10">
+          <p>You should consume your leaderboard API and render a table of challenge users in ascending rank. Each row
+            should contain user’s id, trips and miles. You may add more details if you choice but keep it clean. List
+            the challenges to the right in the select box, users below should be for the current selected challenge.</p>
+        </div>
+        <div class="column is-2">
+          <select ng-model="$ctrl.challenges"
+                  ng-options="challenge._id as challenge.name for challenge in $ctrl.challenges | orderBy:'name' track by challenge._id"></select>
+        </div>
+      </div>
+      <table class="table example">
+        <thead>
+          <th>Id</th>
+          <th>Total Trips</th>
+          <th>Total Miles</th>
+        </thead>
+        <tbody>
+
+        </tbody>
+      </table>
+    </div>
+  </section>
+</div>

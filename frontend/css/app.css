@@ -1,0 +1,30 @@
+/* Bulma offers some great styles, it's included in the project */
+/* You can bring in bootstrap or something similar if your not familiar with flexbox */
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.column {
+    flex: 1 0 auto;
+}
+
+.shrink {
+    flex-shrink: 0;
+}
+
+.example {
+    background: #f5f5f5;
+    margin-top: 25px;
+}
+
+.info p {
+    margin: 10px auto;
+}
+
+.info__btn {
+    margin-top: 5vh;
+}
+/* add your own styles here*/
