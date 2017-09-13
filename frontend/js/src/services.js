@@ -17,7 +17,7 @@
     var instance = this;
 
     //you will probably need to adjust this
-    instance.apiUrl = '/api/challenges';
+    instance.apiUrl = '/api/challenges/';
 
     /**
      * Fetch challenge details
@@ -28,7 +28,9 @@
     /**
      * Get all challenges
      */
-    instance.fetchAll = function(){};
+    instance.fetchAll = function(){
+      return $http.get(instance.apiUrl);
+    };
 
     /**
      * Get all user stats for challenge

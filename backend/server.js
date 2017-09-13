@@ -1,7 +1,7 @@
 "use strict";
 const express = require("express");
 const mongoose = require("mongoose");
-
+const path = require('path');
 const port = process.env.PORT || 3000;
 const mongoUrl = process.env.MONGO || "mongodb://localhost";
 
@@ -13,16 +13,21 @@ mongoose.connect(mongoUrl, function(err){
 
 let challengeRoutes = require("./routes/challenges");
 let triplogRoutes = require("./routes/triplogs");
+let staticFiles = path.resolve('./../frontend/');
+let dependencies = path.resolve('./../node_modules/');
 
 let app = express();
 
 //mount at the specified point. so a route in the challenges routes file that
 //looks like router.get("/hello") will be available at "/challenges/hello
-app.use("/challenges", challengeRoutes);
-app.use("/triplogs", triplogRoutes);
+app.use(express.static(dependencies));
+app.use(express.static(staticFiles));
+
+app.use("/api/challenges", challengeRoutes);
+app.use("/api/triplogs", triplogRoutes);
 
 //basic route to see if things are working
-app.get("/", (req, res) => res.end("Hello World!"));
+app.get("/api/hello", (req, res) => res.end("Hello World!"));
 
 
 app.listen(port, () => console.log("listening on port %d", port));

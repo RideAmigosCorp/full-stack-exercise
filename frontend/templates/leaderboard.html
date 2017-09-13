@@ -17,8 +17,10 @@
             the challenges to the right in the select box, users below should be for the current selected challenge.</p>
         </div>
         <div class="column is-2">
-          <select ng-model="$ctrl.challenges"
-                  ng-options="challenge._id as challenge.name for challenge in $ctrl.challenges | orderBy:'name' track by challenge._id"></select>
+          <select ng-model="$ctrl.selectedChallenge"
+                  ng-change="$ctrl.changeChallenge()"
+                  ng-options="challenge._id as challenge.name for challenge in $ctrl.challenges | orderBy:'name' track by challenge._id">
+          </select>
         </div>
       </div>
       <table class="table example">

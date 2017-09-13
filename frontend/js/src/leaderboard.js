@@ -13,7 +13,7 @@
         challengeId: '<'
       },
       templateUrl: 'templates/leaderboard.html',
-      controller: function(Challenge){
+      controller: function(Challenge, $state){
 
         var $ctrl = this;
 
@@ -26,10 +26,19 @@
           //$ctrl.challengeId = is bound through url param
           //make sure you import data running the script provided in package.json
 
-          $ctrl.challenges = [];
+          $ctrl.selectedChallenge = $ctrl.challengeId;
           $ctrl.challengeName = null;
           $ctrl.total = null;
+
+          Challenge.fetchAll().then(function (success) {
+            $ctrl.challenges = success.data;
+          });
         };
+
+        /**
+         * load the selected challenge
+         */
+        $ctrl.changeChallenge = function(){}
       }
     })
 
