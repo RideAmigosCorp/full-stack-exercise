@@ -12,7 +12,7 @@
     "mongoose": "^4.11.10"
   },
   "scripts" : {
-    "prestart" : "mongoimport triplogs.json && mongoimport challenges.json",
+    "postinstall" : "mongoimport backend/triplogs.json && mongoimport backend/challenges.json",
     "start" : "node backend/server.js"
   }
 }
