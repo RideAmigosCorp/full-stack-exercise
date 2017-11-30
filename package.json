@@ -1,8 +1,8 @@
 {
-  "name": "backend",
+  "name": "fullstack",
   "version": "1.0.0",
-  "description": "The backend portion of the full stack exercise",
-  "main": "server.js",
+  "description": "The RideAmigos full stack exercise",
+  "main": "backend/server.js",
   "repository": "https://github.com/RideAmigosCorp/full-stack-exercise.git",
   "author": "RideAmigos",
   "dependencies": {
@@ -13,6 +13,6 @@
   },
   "scripts" : {
     "prestart" : "mongoimport triplogs.json && mongoimport challenges.json",
-    "start" : "node server.js"
+    "start" : "node backend/server.js"
   }
 }
