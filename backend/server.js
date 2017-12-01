@@ -18,11 +18,12 @@ let dependencies = path.resolve('./../node_modules/');
 
 let app = express();
 
-//mount at the specified point. so a route in the challenges routes file that
-//looks like router.get("/hello") will be available at "/challenges/hello
+//serve frontend files from specified directories
 app.use(express.static(dependencies));
 app.use(express.static(staticFiles));
 
+//mount at the specified point. so a route in the challenges routes file that
+//looks like router.get("/hello") will be available at "/api/challenges/hello
 app.use("/api/challenges", challengeRoutes);
 app.use("/api/triplogs", triplogRoutes);
 
