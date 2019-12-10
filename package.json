@@ -9,7 +9,7 @@
     "@uirouter/angularjs": "^1.0.6",
     "angular": "^1.6.6",
     "express": "^4.15.4",
-    "mongoose": "^4.11.10"
+    "mongoose": "^5.7.5"
   },
   "scripts" : {
     "postinstall" : "mongoimport backend/triplogs.json && mongoimport backend/challenges.json",
